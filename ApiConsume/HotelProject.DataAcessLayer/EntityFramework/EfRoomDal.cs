@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAcessLayer.EntityFramework
 {
-    public class EfRoomDal:GenericRepository<Room>,IRoomDal
+    public class EfRoomDal : GenericRepository<Room>, IRoomDal
     {
-        public EfRoomDal(Context context):base(context) { }
-        
-            
-        
+        public EfRoomDal(Context context) : base(context) { }
+
+
+
     }
 }
