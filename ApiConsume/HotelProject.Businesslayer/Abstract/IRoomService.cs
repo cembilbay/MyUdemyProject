@@ -9,5 +9,6 @@ namespace HotelProject.Businesslayer.Abstract
 {
     public interface IRoomService:IGenericService<Room>
     {
+        int TRoomCount();
     }
 }

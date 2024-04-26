@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAcessLayer.Concrate
 {
-    public class Context:IdentityDbContext<AppUser,AppRole,int>
+    public class Context : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -26,5 +26,6 @@ namespace HotelProject.DataAcessLayer.Concrate
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<SendMessage> SendMessages { get; set; }
         public DbSet<MessageCategory> MessageCategories { get; set; }
+        public DbSet<WorkLocation> WorkLocations { get; set; }
     }
 }

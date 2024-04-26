@@ -17,7 +17,14 @@ namespace HotelProject.Businesslayer.Concrate
         {
             _staffDal = staffDal;
         }
-
+        public int TGetStaffCount()
+        {
+            return _staffDal.GetStaffCount();
+        }
+        public List<Staff> TLast4Staff()
+        {
+            return _staffDal.Last4Staff();
+        }
         public void TDelete(Staff t)
         {
             _staffDal.Delete(t);
